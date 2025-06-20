@@ -1,28 +1,14 @@
 # Elevator Resting Floor Data Collector
 
-## 🚀 Objetivo
-Registrar eventos de uso de elevador para alimentar um futuro modelo preditivo de "resting floor" ideal.
+## 🚀 Objective
+Record elevator usage events to later train a predictive model that suggests the ideal "resting floor" for an elevator.
 
-## 📦 Como executar
+## 📦 How to Run
 
-### Ambiente local
+### Local Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload
-```
-
-### Com Docker
-
-```bash
-docker build -t elevator-api .
-docker run -p 8000:8000 --env-file .env elevator-api
-```
-
-## 🧪 Testes
-
-```bash
-pytest
-```
